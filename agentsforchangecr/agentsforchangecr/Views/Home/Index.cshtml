@@ -2,70 +2,77 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="row">
+<div class="row mainImageRow">
     @*<div class="col-xs-3 stretch-row">
-        <meter value="35" max="100">Level</meter>
+            <meter value="35" max="100">Level</meter>
+        </div>*@
+    <div class="col-xs-12">
+        <img src="~/Content/Images/tempLogo.jpg" class="img-responsive mainImageLogo" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-4 customGlyphiconRow">
+        <div class="row">
+            <span class="col-xs-12 glyphicon glyphicon-check customGlyphicon"></span>
+            <h2 class="col-xs-12">Some Text</h2>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 customGlyphiconRow">
+        <div class="row">
+            <span class="col-xs-12 glyphicon glyphicon-question-sign customGlyphicon"></span>
+            <h2 class="col-xs-12">Other Exciting Text</h2>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 customGlyphiconRow">
+        <div class="row">
+            <span class="col-xs-12 glyphicon glyphicon-piggy-bank customGlyphicon"></span>
+            <h2 class="col-xs-12">More points about things</h2>
+        </div>
+    </div>
+</div>
+<div class="row preGaugeRow">
+    <h2 class="col-xs-12">Our Progress</h2>
+</div>
+<div class="row gaugeRow">    
+    <div class="col-xs-12">
+        <div class="gaugeContainer img-responsive">
+            <div class="gauge-a"></div>
+            <div class="gauge-b"></div>
+            <div id="rotationGauge" class="gauge-c"></div>
+            <div class="gauge-data">
+                <h1 id="gaugePercent">72%</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*<div class="row">
+        <div class="col-xs-2 stretch-column">
+
+        </div>
     </div>*@
-    <div class="col-xs-12 jumbotron">
-        <h1>Agents For Change</h1>
-        <p class="lead">Future home of something awesome.</p>
-    </div>
-</div>
-
-<div class="row">
-    @*<div class="col-xs-3 stretch-row">
-            <meter value="35" max="100">Level</meter>
-        </div>*@
-    <div class="col-xs-12 jumbotron">
-        <h1>Agents For Change</h1>
-        <p class="lead">Future home of something awesome.</p>
-    </div>
-</div>
-
-<div class="row">
-    @*<div class="col-xs-3 stretch-row">
-            <meter value="35" max="100">Level</meter>
-        </div>*@
-    <div class="col-xs-12 jumbotron">
-        <h1>Agents For Change</h1>
-        <p class="lead">Future home of something awesome.</p>
-    </div>
-</div>
-
-<div class="row">
-    @*<div class="col-xs-3 stretch-row">
-            <meter value="35" max="100">Level</meter>
-        </div>*@
-    <div class="col-xs-12 jumbotron">
-        <h1>Agents For Change</h1>
-        <p class="lead">Future home of something awesome.</p>
-    </div>
-</div>
-@*<div class="row">
-    <div class="col-xs-2 stretch-column">
-        
-    </div>
-</div>*@
 
 
 @*<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>*@
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>*@

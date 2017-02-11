@@ -5,10 +5,15 @@ $tertiary-color: #6E7587;
 $background-color: rgb(234,234,234);
 $footer-background: rgb(34,34,34);
 
+$gaugeData-color: #5cb85c;
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
 .body-content {
     min-height: 500px;
-    
-   
+    margin-top:50px;
+    /*border-top-left-radius: 1em;
+    border-top-right-radius: 1em;*/
 }
 
 body{
@@ -24,6 +29,10 @@ footer {
     box-shadow: 0px 500px 0px 500px $footer-background;
     text-align:center;
     border-color: $footer-background;
+}
+footer > p
+{
+    color: white;
 }
 
 .navbar-inverse
@@ -77,14 +86,173 @@ li > a {
 {
     color: white;
     line-height:10px;
+    margin-right:10px;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
     color: $footer-background;
     background-color: $secondary-color;
     border-bottom: 5px solid $secondary-color;
-    border-top-left-radius: 0.7em;
-    border-top-right-radius: 0.7em;
+    /*border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;*/
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
     border-bottom: 5px solid $secondary-color;
     }
+
+.mainImageLogo
+{
+    margin: 0 auto;
+    border-radius:18em;
+    width:500px;
+}
+
+.mainImageRow
+{
+    padding-top:50px;
+    padding-bottom:150px;
+}
+
+.customGlyphiconRow{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.customGlyphicon
+{
+    font-size:120px;
+    color:$footer-background;
+}
+
+
+
+.gaugeContainer {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.gauge-a {
+  z-index: 1;
+  position: absolute;
+  /*background-color: rgba(255,255,255,.2);*/
+  width: 400px;
+  height: 200px;
+  top: 0%;
+  border-radius: 250px 250px 0px 0px;
+}
+
+.gauge-b {
+  z-index: 3;
+  position: absolute;
+  background-color: #222;
+  width: 250px;
+  height: 125px;
+  top: 75px;
+  margin-left: 75px;
+  margin-right: auto;
+  border-radius: 250px 250px 0px 0px;
+}
+
+.gauge-c {
+  z-index: 2;
+  position: absolute;
+  background-color: $gaugeData-color;
+  width: 400px;
+  height: 200px;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 0px 200px 200px;
+  transform-origin: center top;
+  transition: all 1.3s ease-in-out;
+}
+
+/*.gaugeContainer:hover .gauge-c {  transform:rotate(.5turn);
+}
+
+.gaugeContainer:hover .gauge-data { color: rgba(255,255,255,1); }*/
+
+.gauge-data {
+  z-index: 4;
+  color: rgba(255,255,255,.2);
+  font-size: 1.5em;
+  line-height: 25px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s ease-out;
+}
+
+.gauge-data > h1{
+    color: white;
+}
+
+.preGaugeRow
+{
+    text-align:center;
+}
+.gaugeRow
+{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+// Social Media
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a { 
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+/*.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}*/
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 170px;   
+   z-index:999;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
