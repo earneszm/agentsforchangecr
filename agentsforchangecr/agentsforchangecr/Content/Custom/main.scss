@@ -1,5 +1,5 @@
 ﻿$primary-color: #3862c6;
-$secondary-color: #f0f000;
+$secondary-color: #f2da1f;
 $tertiary-color: #6E7587;
 
 $background-color: rgb(234,234,234);
@@ -11,7 +11,7 @@ $gaugeData-color: #5cb85c;
 
 .body-content {
     min-height: 500px;
-    margin-top:50px;
+    margin-top:100px;
     /*border-top-left-radius: 1em;
     border-top-right-radius: 1em;*/
 }
@@ -99,6 +99,9 @@ li > a {
     border-bottom: 5px solid $secondary-color;
     }
 
+.navbar-nav {
+    margin-top:60px;
+}
 .mainImageLogo
 {
     margin: 0 auto;
@@ -256,3 +259,89 @@ ul {
 #sticky-social a[class*="twitter"],
 #sticky-social a[class*="twitter"]:hover,
 #sticky-social a[class*="twitter"] span { background: #00aced; }
+
+.afc-bio-list
+{
+    list-style-type: square;
+    font-size:20px;
+}
+
+.afc-bio-list > li > span
+{
+    font-size:16px;
+}
+
+.afc-content-header
+{
+    text-align:center;
+}
+
+.afc-faq-row{
+    font-size:16px;
+    margin-bottom:40px;
+}
+
+.afc-faq-question-lead, .afc-faq-answer-lead
+{
+    font-size:20px;
+    font-weight:bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.afc-faq-question-lead
+{
+  color: $secondary-color;
+  
+}
+
+.afc-faq-answer-lead
+{
+  color: green;
+}
+
+.afc-faq-question-div
+{
+    padding-bottom:7px;
+}
+
+.afc-testimonial-item-div
+{
+    margin-bottom: 35px;
+    font-size:16px;
+    border: 2px solid $footer-background;
+}
+
+.afc-inner-content
+{    
+    padding: 10px;
+}
+
+.afc-header-logo
+{
+    padding-right:50px;
+    /*border-radius:10em;*/
+}
+
+.afc-homepage-mainImage{
+    margin: 20px;
+}
+
+.afc-homepage-startofarticle{
+    margin-top:50px;
+}
+
+.afc-homepage-mainContent-div{
+    font-size: 18px;
+}
+
+.afc-double-border{
+    border: 3px solid $footer-background;
+    box-shadow:
+        0 0 0 5px $secondary-color,
+        0 0 0 8px $footer-background;
+    padding:3em;
+}
+
+.img-responsive-center{
+    margin: 0 auto;
+}

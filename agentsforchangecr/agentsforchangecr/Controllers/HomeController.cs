@@ -34,7 +34,9 @@ namespace agentsforchangecr.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            var model = new FAQContent();
+
+            return View(model);
         }
 
         public ActionResult Contact()
@@ -46,9 +48,9 @@ namespace agentsforchangecr.Controllers
 
         public ActionResult Testimonial()
         {
-            ViewBag.Message = "Your application description page.";
-            
-            return View();
+            var model = new TestimonialContent();
+
+            return View(model);
         }
 
         private void SendEmail(LeadForm lead)

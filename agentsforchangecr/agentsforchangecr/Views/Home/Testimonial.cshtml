@@ -1,7 +1,27 @@
-﻿
+﻿@model TestimonialContent
+
 @{
     ViewBag.Title = "Testimonial";
 }
 
-<h2>Testimonial</h2>
+<h2 class="afc-content-header">What Our Clients Are Saying</h2>
 
+<div class="row">    
+    <div class="col-xs-12 col-sm-5">
+        <h3 class="col-xs-12 text-center">David Chidyllo</h3>
+        @{ foreach (var item in Model.DavesTestimonials)
+            {
+                <div class="col-xs-12 afc-testimonial-item-div afc-double-border"><div class="afc-inner-content">"@(item)"</div></div>
+            }
+        }
+    </div>
+    <div class="col-md-2 hidden-xs"></div>
+    <div class="col-xs-12 col-sm-5">
+        <h3 class="col-xs-12 text-center">Jim Rosenberger</h3>
+        @{ foreach (var item in Model.JimsTestimonials)
+            {
+                <div class="col-xs-12 afc-testimonial-item-div afc-double-border"><div class="afc-inner-content">"@(item)"</div></div>
+            }
+        }
+    </div>
+</div>

@@ -1,7 +1,21 @@
-﻿
+﻿@model FAQContent
 @{
     ViewBag.Title = "FAQ";
 }
 
-<h2>FAQ</h2>
+<h2 class="afc-content-header">Frequently Asked Questions</h2>
+
+@{
+    foreach (var item in Model.ListOfQuestions)
+    {
+        <div class="row afc-faq-row">
+            <div class="col-md-2 hidden-sm"></div>
+            <div class="col-xs-12 col-md-8">
+                <div class="col-xs-12 afc-faq-question-div"><span class="afc-faq-question-lead">Q: </span><b>@item.Question</b></div>
+                <div class="col-xs-12"><span class="afc-faq-answer-lead">A: </span>@item.Answer</div>
+            </div>
+            <div class="col-md-2 hidden-sm"></div>
+        </div>
+    }
+ }
 

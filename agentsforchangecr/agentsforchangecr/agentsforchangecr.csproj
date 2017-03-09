@@ -123,7 +123,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\FAQContent.cs" />
     <Compile Include="Models\LeadForm.cs" />
+    <Compile Include="Models\TestimonialContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +135,11 @@
     <Content Include="Content\Custom\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <Content Include="Content\Images\AgentsforChange_logo.png" />
+    <Content Include="Content\Images\Chidyllo_David.jpg" />
+    <Content Include="Content\Images\falvey-group-logo.png" />
+    <Content Include="Content\Images\J_Rosenberger.jpg" />
+    <Content Include="Content\Images\smallLogo.png" />
     <Content Include="Content\Images\tempLogo.jpg" />
     <Content Include="Content\Vendor\bootstrap-theme.css" />
     <Content Include="Content\Vendor\bootstrap-theme.min.css" />
