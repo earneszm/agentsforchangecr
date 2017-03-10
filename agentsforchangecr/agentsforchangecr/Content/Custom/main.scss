@@ -1,9 +1,10 @@
 ﻿$primary-color: #3862c6;
-$secondary-color: #f2da1f;
+$afc-yellow-color: #f2da1f;
+$afc-dark-yellow-color: #a9940a;
 $tertiary-color: #6E7587;
 
 $background-color: rgb(234,234,234);
-$footer-background: rgb(34,34,34);
+$afc-black-color: rgb(34,34,34);
 
 $gaugeData-color: #5cb85c;
 
@@ -11,167 +12,170 @@ $gaugeData-color: #5cb85c;
 
 .body-content {
     min-height: 500px;
-    margin-top:100px;
+    margin-top: 60px;
     /*border-top-left-radius: 1em;
     border-top-right-radius: 1em;*/
 }
 
-body{
+body {
     background-color: $background-color;
 }
 
 footer {
-    background-color: $footer-background;
+    background-color: $afc-black-color;
     padding-top: 20px;
     min-height: 80px;
     font-weight: bold;
     font-size: large;
-    box-shadow: 0px 500px 0px 500px $footer-background;
-    text-align:center;
-    border-color: $footer-background;
+    box-shadow: 0px 500px 0px 500px $afc-black-color;
+    text-align: center;
+    border-color: $afc-black-color;
 }
-footer > p
-{
+
+footer > p {
     color: white;
 }
 
-.navbar-inverse
-{
-    background-color: $footer-background;
+.navbar-inverse {
+    background-color: $afc-black-color;
 }
 
-meter{
--webkit-transform: rotate(270deg);
--moz-transform: rotate(270deg);
--o-transform: rotate(270deg);
-transform: rotate(270deg);
-
-height:80px;
-width:450px;
-
-position:absolute;
-    bottom:160px;
-    left:-50px;
+meter {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    height: 80px;
+    width: 450px;
+    position: absolute;
+    bottom: 160px;
+    left: -50px;
 }
 
-.stretch-row
-{
+.stretch-row {
     /*padding-right:50px;
     padding-top:300px;*/
-    height:500px;
+    height: 500px;
 }
 
-.navbar{
-   // min-height:100px;
-   border-bottom: 5px solid $footer-background;
-   border-top: 5px solid $footer-background;
+.navbar {
+    // min-height:100px;
+    border-bottom: 5px solid $afc-yellow-color;
+    border-top: 5px solid $afc-black-color;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px -3px;
 }
 
-.navbar .container{
-    
-    vertical-align:bottom;
+.navbar .container {
+    vertical-align: bottom;
 }
 
-.shrink{
+.shrink {
     min-height: 35px;
 }
+
 li > a {
     font-weight: bold;
 }
-.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-header > a
-{
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-header > a {
     color: white;
 }
-.navbar-nav > li > a
-{
+
+.navbar-nav > li > a {
     color: white;
-    line-height:10px;
-    margin-right:10px;
+    line-height: 10px;
+    margin-right: 25px;
+    font-size: 20px;
 }
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
-    color: $footer-background;
-    background-color: $secondary-color;
-    border-bottom: 5px solid $secondary-color;
-    /*border-top-left-radius: 0.7em;
-    border-top-right-radius: 0.7em;*/
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: $afc-black-color;
+  //  border-bottom: 5px solid $afc-yellow-color;
+    background: $afc-yellow-color;    
+    background: -webkit-linear-gradient($afc-dark-yellow-color, $afc-yellow-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($afc-dark-yellow-color, $afc-yellow-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($afc-dark-yellow-color, $afc-yellow-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($afc-dark-yellow-color, $afc-yellow-color); /* Standard syntax */
+    box-shadow: inset 0 0 5px;
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
-    border-bottom: 5px solid $secondary-color;
-    }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    border-bottom: 5px solid $afc-yellow-color;
+}
 
 .navbar-nav {
-    margin-top:60px;
+    margin-top: 20px;
 }
-.mainImageLogo
-{
+
+.mainImageLogo {
     margin: 0 auto;
-    border-radius:18em;
-    width:500px;
+    border-radius: 18em;
+    width: 500px;
 }
 
-.mainImageRow
-{
-    padding-top:50px;
-    padding-bottom:150px;
+.mainImageRow {
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
-.customGlyphiconRow{
+.customGlyphiconRow {
     text-align: center;
     padding-bottom: 100px;
 }
-.customGlyphicon
-{
-    font-size:120px;
-    color:$footer-background;
+
+.customGlyphicon {
+    font-size: 120px;
+    color: $afc-black-color;
 }
 
 
 
 .gaugeContainer {
-  width: 400px;
-  height: 200px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  overflow: hidden;
-  text-align: center;
-  transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    overflow: hidden;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
 .gauge-a {
-  z-index: 1;
-  position: absolute;
-  /*background-color: rgba(255,255,255,.2);*/
-  width: 400px;
-  height: 200px;
-  top: 0%;
-  border-radius: 250px 250px 0px 0px;
+    z-index: 1;
+    position: absolute;
+    /*background-color: rgba(255,255,255,.2);*/
+    width: 400px;
+    height: 200px;
+    top: 0%;
+    border-radius: 250px 250px 0px 0px;
 }
 
 .gauge-b {
-  z-index: 3;
-  position: absolute;
-  background-color: #222;
-  width: 250px;
-  height: 125px;
-  top: 75px;
-  margin-left: 75px;
-  margin-right: auto;
-  border-radius: 250px 250px 0px 0px;
+    z-index: 3;
+    position: absolute;
+    background-color: #222;
+    width: 250px;
+    height: 125px;
+    top: 75px;
+    margin-left: 75px;
+    margin-right: auto;
+    border-radius: 250px 250px 0px 0px;
 }
 
 .gauge-c {
-  z-index: 2;
-  position: absolute;
-  background-color: $gaugeData-color;
-  width: 400px;
-  height: 200px;
-  top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0px 0px 200px 200px;
-  transform-origin: center top;
-  transition: all 1.3s ease-in-out;
+    z-index: 2;
+    position: absolute;
+    background-color: $gaugeData-color;
+    width: 400px;
+    height: 200px;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 200px 200px;
+    transform-origin: center top;
+    transition: all 1.3s ease-in-out;
 }
 
 /*.gaugeContainer:hover .gauge-c {  transform:rotate(.5turn);
@@ -180,29 +184,28 @@ li > a {
 .gaugeContainer:hover .gauge-data { color: rgba(255,255,255,1); }*/
 
 .gauge-data {
-  z-index: 4;
-  color: rgba(255,255,255,.2);
-  font-size: 1.5em;
-  line-height: 25px;
-  position: absolute;
-  width: 400px;
-  height: 200px;
-  top: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: all 1s ease-out;
+    z-index: 4;
+    color: rgba(255,255,255,.2);
+    font-size: 1.5em;
+    line-height: 25px;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease-out;
 }
 
-.gauge-data > h1{
+.gauge-data > h1 {
     color: white;
 }
 
-.preGaugeRow
-{
-    text-align:center;
+.preGaugeRow {
+    text-align: center;
 }
-.gaugeRow
-{
+
+.gaugeRow {
     padding-top: 100px;
     padding-bottom: 200px;
 }
@@ -210,15 +213,18 @@ li > a {
 // Social Media
 /* entypo */
 [class*="entypo-"]:before {
-   font-family: "entypo", sans-serif;
+    font-family: "entypo", sans-serif;
+    font-size: 30px;
 }
-a { 
-   text-decoration: none;
+
+a {
+    text-decoration: none;
 }
+
 ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /*.container {
    margin: 0 auto;
@@ -226,122 +232,319 @@ ul {
    background: white;
 }*/
 #sticky-social {
-   left: 0;
-   position: fixed;
-   top: 170px;   
-   z-index:999;
+    left: 0;
+    position: fixed;
+    top: 30%;
+    z-index: 999;
 }
+
 #sticky-social a {
-   background: #333;
-   color: #fff;
-   display: block;
-   height: 35px;
-   font: 16px "Open Sans", sans-serif;
-   line-height: 35px;
-   position: relative;
-   text-align: center;
-   width: 35px;
+    background: #333;
+    color: #fff;
+    display: block;
+    height: 45px;
+    font: 20px "Open Sans", sans-serif;
+    line-height: 45px;
+    position: relative;
+    text-align: center;
+    width: 45px;
 }
+
 #sticky-social a span {
-   line-height: 35px;
-   left: -120px;
-   position: absolute;
-   text-align:center;
-   width:120px;
+    line-height: 45px;
+    left: -120px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
 }
+
 #sticky-social a:hover span {
-   left: 100%;
+    left: 100%;
 }
+
 #sticky-social a[class*="facebook"],
 #sticky-social a[class*="facebook"]:hover,
-#sticky-social a[class*="facebook"] span { background: #3b5998; }
+#sticky-social a[class*="facebook"] span {
+    background: #3b5998;
+}
 
 #sticky-social a[class*="twitter"],
 #sticky-social a[class*="twitter"]:hover,
-#sticky-social a[class*="twitter"] span { background: #00aced; }
+#sticky-social a[class*="twitter"] span {
+    background: #00aced;
+}
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }  
 
-.afc-bio-list
-{
+#sticky-social a[class*="play"],
+#sticky-social a[class*="play"]:hover,
+#sticky-social a[class*="play"] span { background: #e52d27; }  
+
+.afc-bio-list {
     list-style-type: square;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.afc-bio-list > li > span
-{
-    font-size:16px;
+.afc-bio-list > li > span {
+    font-size: 16px;
 }
 
-.afc-content-header
-{
-    text-align:center;
+.afc-content-header {
+    text-align: center;
 }
 
-.afc-faq-row{
-    font-size:16px;
-    margin-bottom:40px;
+.afc-faq-row {
+    font-size: 16px;
+    margin-bottom: 40px;
 }
 
-.afc-faq-question-lead, .afc-faq-answer-lead
-{
-    font-size:20px;
-    font-weight:bold;
+.afc-faq-question-lead, .afc-faq-answer-lead {
+    font-size: 25px;
+    font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.afc-faq-question-lead
-{
-  color: $secondary-color;
-  
+.afc-faq-question-lead {
+    color: $afc-yellow-color;
 }
 
-.afc-faq-answer-lead
-{
-  color: green;
+.afc-faq-answer-lead {
+    color: green;
 }
 
-.afc-faq-question-div
-{
-    padding-bottom:7px;
+.afc-faq-question-div {
+    padding-bottom: 7px;
 }
 
-.afc-testimonial-item-div
-{
+.afc-testimonial-item-div {
     margin-bottom: 35px;
-    font-size:16px;
-    border: 2px solid $footer-background;
+    font-size: 16px;
+    border: 2px solid $afc-black-color;
 }
 
-.afc-inner-content
-{    
+.afc-inner-content {
     padding: 10px;
 }
 
-.afc-header-logo
-{
-    padding-right:50px;
+.afc-header-logo {
+    padding-right: 50px;
     /*border-radius:10em;*/
 }
 
-.afc-homepage-mainImage{
+.afc-homepage-mainImage {
     margin: 20px;
 }
 
-.afc-homepage-startofarticle{
-    margin-top:50px;
+.afc-homepage-startofarticle {
+    margin-top: 50px;
 }
 
-.afc-homepage-mainContent-div{
+.afc-homepage-mainContent-div {
     font-size: 18px;
 }
 
-.afc-double-border{
-    border: 3px solid $footer-background;
-    box-shadow:
-        0 0 0 5px $secondary-color,
-        0 0 0 8px $footer-background;
-    padding:3em;
+.afc-double-border {
+    border: 3px solid $afc-black-color;
+    box-shadow: 0 0 0 5px $afc-yellow-color, 0 0 0 8px $afc-black-color;
+    padding: 3em;
 }
 
-.img-responsive-center{
+.afc-double-border-bottom {
+    border-bottom: 3px solid $afc-black-color;
+    box-shadow: 0 4px 2px -2px $afc-yellow-color, 0 8px 4px -4px $afc-black-color;
+    padding-bottom: 5px;
+    margin-bottom:40px;
+    color: $afc-black-color;
+    font-weight: bold;
+}
+
+.img-responsive-center {
     margin: 0 auto;
+}
+
+.afc-textbox-label {
+    text-align: right;
+    font-size: 18px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.afc-textbox {
+    padding-bottom: 25px;
+}
+
+.afc-required {
+    color: red;
+    font-size: 20px;
+}
+
+.afc-textbox-comments {
+    height: 150px !important;
+}
+
+.afc-contact-form-placeholder {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.afc-validation-failed {
+    border: 1px solid red;
+}
+
+.afc-submit-success-text, .afc-submit-failure-text {
+    text-align: center;
+    display: none;
+}
+
+.afc-modal-label{
+    font-weight: bold;
+}
+
+.afc-contact-request-received{
+    color: green;
+}
+
+.afc-contact-request-failure{
+    color: red;
+}
+
+.afc-falvey-logo{
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.afc-copyright{
+    margin-top: 25px;
+}
+
+.afc-contact-text
+{
+    font-size:18px;
+    text-align: center;
+}
+
+#afc-fixed-email{
+    color: white;
+    font-weight: bold;
+    text-align:right;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+
+.afc-client-donations > ul > li{
+    font-size: 24px;
+    list-style-type: square;
+}
+
+.afc-client-donations > ul > li > span{
+    font-size: 20px;
+    list-style-type: square;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    width:300px;
+    margin:50px 0px 30px 30px;
+    float:left;
+}
+
+.thermometer {
+    width:80px;
+    height:400px;
+    position: relative;
+    background: #ddd;
+    border:1px solid #aaa;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+         -o-border-radius: 12px;
+            border-radius: 12px;
+
+    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+       -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+        -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+         -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+            box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+}
+
+.thermometer .track {
+    height:375px;
+    top:10px;
+    width:35px;
+    border: 1px solid #aaa;
+    position: relative;
+    margin:0 auto;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-position: 0 -1px;
+    background-size: 100% 5%;
+}
+
+.thermometer .progress {
+    height:0%;
+    width:100%;
+    background: rgb(20,100,20);
+    background: rgba(20,100,20,0.6);
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:0px;
+    border-radius: 0px;
+}
+
+.thermometer .goal {
+    position:absolute;
+    top:0;
+}
+
+.thermometer .amount {
+    display: inline-block;
+    padding:0 5px 0 60px;
+    border-top:1px solid black;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color:#333;
+}
+
+.thermometer .progress .amount {
+    padding:0 60px 0 5px;
+    position: absolute;
+  border-top:1px solid #060;
+  //  color:#060;
+    right:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  display: block;
+}
+#goalProgress
+{
+    position: absolute;
+    top: -10px;
+    right:-25px;
+}
+
+.textProgressAmount{
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: -15px;
 }

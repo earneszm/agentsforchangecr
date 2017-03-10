@@ -2,68 +2,84 @@
     ViewBag.Title = "Home Page";
 }
 
-
+<h2 class="col-xs-12 text-center afc-double-border-bottom">Agents For Change Capital Region</h2>
 
 <div class="row">
     <div class="col-sm-2 hidden-xs"></div>
-    <div class="col-xs-12 col-sm-8 afc-homepage-mainContent-div">
+    <div class="col-xs-12 col-sm-9 afc-homepage-mainContent-div">
         <img src="~/Content/Images/AgentsforChange_logo.png" width="300" class="img-responsive pull-left afc-homepage-mainImage" />
-            <h3 class="afc-homepage-startofarticle">Albany Realtors Give Back</h3>
-            <span><i>With Agents for Change, Capital Region homebuyers and sellers donate to causes they care about most.</i></span>
-            <br /><br />
-            <p><b>Albany, NY (March 13, 2017)</b> - Realtor Dave Chidyllo is no stranger to giving back. Chidyllo has Hemophilia A, and as a child he attended summer camp at the Double H Ranch, an Adirondack camp for kids with critical illnesses. It was a powerful experience that inspired Chidyllo to do meaningful work. So as a young adult, he worked at Double H Ranch for ten summers—and it was then that philanthropy become one of his core values.</p>
-            <p>Meanwhile, seasoned realtor Jim Rosenberger wanted to make his work more meaningful. Rosenberger has sold over 100 houses in the Capital Region. Buying and selling real estate, he's learned, is a major milestone in a person's life.  Both agents wondered—could they make the purchase or sale of real estate more socially impactful?</p>
-            <p>So together, the two Falvey Real Estate Group colleagues formed Agents for Change. Every time a client buys or sells a house, Chidyllo and Rosenberger will donate 10% of their personal commission to a charity of the client's choice.</p>
-            <p>"Maybe you're passionate about animal welfare, or maybe you care deeply about hunger relief. We're giving people the opportunity to put their money where their values are," Chidyllo says.</p>
-            <p>Rosenberger agrees. "I already get to change somebody's life by helping them find a home. We're adding another level of meaning and substance to that."</p>
-            <p>Here's how it works: A buyer or seller chooses either Chidyllo or Rosenberger to be their real estate agent. Upon the purchase or sale of their home, the buyer/seller chooses a charity they'd like to make a donation to (it has to be a registered 501(c)(3)). Chidyllo and Rosenberger then give ten percent of their personal commission to the charity of choice.</p>
-            <p>"At the end of the day,” Chidyllo says, "there are two places for that money to go: into the realtor's pocket or back to a charity. Isn't that nicer that it goes to produce some good in the world?"</p>
-            <p>The program, Rosenberger notes, helps people make sizeable donations to causes they believe in. "We're empowering them to make a large gift that they might not otherwise be able to make," he says.</p>
-            <p>To learn more about Agents for Change, please visit www.agentsforchangecr.com. Members of the media can contact Sarah Harris or Erica Stoeckeler at 518-523-335 to arrange an interview with Chidyllo and Rosenberger.</p>
+        <h3 class="afc-homepage-startofarticle">Albany Realtors Give Back</h3>
+        <span><i>With Agents for Change, Capital Region homebuyers and sellers donate to causes they care about most.</i></span>
+        <br /><br />
+        <p><b>Albany, NY (March 13, 2017)</b> - Realtor Dave Chidyllo is no stranger to giving back. Chidyllo has Hemophilia A, and as a child he attended summer camp at the Double H Ranch, an Adirondack camp for kids with critical illnesses. It was a powerful experience that inspired Chidyllo to do meaningful work. So as a young adult, he worked at Double H Ranch for ten summers—and it was then that philanthropy become one of his core values.</p>
+        <p>Meanwhile, seasoned realtor Jim Rosenberger wanted to make his work more meaningful. Rosenberger has sold over 100 houses in the Capital Region. Buying and selling real estate, he's learned, is a major milestone in a person's life.  Both agents wondered—could they make the purchase or sale of real estate more socially impactful?</p>
+        <p>So together, the two Falvey Real Estate Group colleagues formed Agents for Change. Every time a client buys or sells a house, Chidyllo and Rosenberger will donate 10% of their personal commission to a charity of the client's choice.</p>
+        <p>"Maybe you're passionate about animal welfare, or maybe you care deeply about hunger relief. We're giving people the opportunity to put their money where their values are," Chidyllo says.</p>
+        <p>Rosenberger agrees. "I already get to change somebody's life by helping them find a home. We're adding another level of meaning and substance to that."</p>
+        <p>Here's how it works: A buyer or seller chooses either Chidyllo or Rosenberger to be their real estate agent. Upon the purchase or sale of their home, the buyer/seller chooses a charity they'd like to make a donation to (it has to be a registered 501(c)(3)). Chidyllo and Rosenberger then give ten percent of their personal commission to the charity of choice.</p>
+        <p>"At the end of the day,” Chidyllo says, "there are two places for that money to go: into the realtor's pocket or back to a charity. Isn't that nicer that it goes to produce some good in the world?"</p>
+        <p>The program, Rosenberger notes, helps people make sizeable donations to causes they believe in. "We're empowering them to make a large gift that they might not otherwise be able to make," he says.</p>
+        <p>To learn more about Agents for Change, please visit www.agentsforchangecr.com. Members of the media can contact Sarah Harris or Erica Stoeckeler at 518-523-335 to arrange an interview with Chidyllo and Rosenberger.</p>
+    </div>
+    <div class="col-sm-1">
+        <div class="content">
+            <h2 id="goalProgress"></h2>
+            <div class="thermometer">
+                <div class="track">
+                    <div class="goal">
+                        <div class="amount"> 100 </div>
+                    </div>
+                    <div class="progress">
+                        @**@
+                    </div>
+                </div>
+            </div>
+            <div class="textProgressAmount"> </div>
         </div>
+    </div>
 </div>
 
 @*<div class="row mainImageRow">
-    <div class="col-xs-12">
-        <img src="~/Content/Images/tempLogo.jpg" class="img-responsive mainImageLogo" />
+        <div class="col-xs-12">
+            <img src="~/Content/Images/tempLogo.jpg" class="img-responsive mainImageLogo" />
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-xs-12 col-md-4 customGlyphiconRow">
-        <div class="row">
-            <span class="col-xs-12 glyphicon glyphicon-check customGlyphicon"></span>
-            <h2 class="col-xs-12">Some Text</h2>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 customGlyphiconRow">
+            <div class="row">
+                <span class="col-xs-12 glyphicon glyphicon-check customGlyphicon"></span>
+                <h2 class="col-xs-12">Some Text</h2>
+            </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-4 customGlyphiconRow">
-        <div class="row">
-            <span class="col-xs-12 glyphicon glyphicon-question-sign customGlyphicon"></span>
-            <h2 class="col-xs-12">Other Exciting Text</h2>
+        <div class="col-xs-12 col-md-4 customGlyphiconRow">
+            <div class="row">
+                <span class="col-xs-12 glyphicon glyphicon-question-sign customGlyphicon"></span>
+                <h2 class="col-xs-12">Other Exciting Text</h2>
+            </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-4 customGlyphiconRow">
-        <div class="row">
-            <span class="col-xs-12 glyphicon glyphicon-piggy-bank customGlyphicon"></span>
-            <h2 class="col-xs-12">More points about things</h2>
-        </div>
-    </div>
-</div>
-<div class="row preGaugeRow">
-    <h2 class="col-xs-12">Our Progress</h2>
-</div>
-<div class="row gaugeRow">    
-    <div class="col-xs-12">
-        <div class="gaugeContainer img-responsive">
-            <div class="gauge-a"></div>
-            <div class="gauge-b"></div>
-            <div id="rotationGauge" class="gauge-c"></div>
-            <div class="gauge-data">
-                <h1 id="gaugePercent">72%</h1>
+        <div class="col-xs-12 col-md-4 customGlyphiconRow">
+            <div class="row">
+                <span class="col-xs-12 glyphicon glyphicon-piggy-bank customGlyphicon"></span>
+                <h2 class="col-xs-12">More points about things</h2>
             </div>
         </div>
     </div>
-</div>*@
+    <div class="row preGaugeRow">
+        <h2 class="col-xs-12">Our Progress</h2>
+    </div>
+    <div class="row gaugeRow">
+        <div class="col-xs-12">
+            <div class="gaugeContainer img-responsive">
+                <div class="gauge-a"></div>
+                <div class="gauge-b"></div>
+                <div id="rotationGauge" class="gauge-c"></div>
+                <div class="gauge-data">
+                    <h1 id="gaugePercent">72%</h1>
+                </div>
+            </div>
+        </div>
+    </div>*@
 
 
 @*<div class="row">

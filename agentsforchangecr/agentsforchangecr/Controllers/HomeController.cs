@@ -53,7 +53,14 @@ namespace agentsforchangecr.Controllers
             return View(model);
         }
 
-        private void SendEmail(LeadForm lead)
+        public JsonResult ContactSubmit(Contact contact)
+        {
+            var sendSuccess = SendEmail(contact);
+
+            return Json(new { sent = sendSuccess });
+        }
+
+        private bool SendEmail(Contact contact)
         {
             SmtpClient smtpClient = new SmtpClient();
             try
@@ -63,19 +70,24 @@ namespace agentsforchangecr.Controllers
                 //smtpClient.Timeout = 10000;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("admin@mattplusrebecca.com", "plastik5");
+                smtpClient.Credentials = new NetworkCredential("contact@agentsforchangecr.com", "agentsforchange");
                               
 
-                string subject = "New Lead!";
-                string body = "some lead information here";
+                string subject = string.Format("Request for contact from: {0} {1}", contact.FirstName, contact.LastName);
+                string body = string.Format("<b>First Name:</b> {0}<br /><b>Last Name:</b> {1}<br /><b>Email:</b> {2}<br /><b>Phone #:</b> {3}<br /><b>Comments:</b> {4}",
+                    contact.FirstName, contact.LastName, contact.Email, contact.Phone, contact.Comment);
 
-                MailMessage mailMessage = new MailMessage("noreply@agentsforchangecr.com", "zach.earnest@gmail.com", subject, body);
+                MailMessage mailMessage = new MailMessage("noreply@agentsforchangecr.com", "agentsforchangecr@gmail.com", subject, body);
+                mailMessage.IsBodyHtml = true;
 
                 smtpClient.Send(mailMessage);
             }
             catch (Exception ex)
             {
+                return false;
             }
+
+            return true;
         }
     }
 }

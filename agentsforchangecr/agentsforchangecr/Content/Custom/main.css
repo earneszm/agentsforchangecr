@@ -1,7 +1,7 @@
 ﻿@import url(http://weloveiconfonts.com/api/?family=entypo);
 .body-content {
   min-height: 500px;
-  margin-top: 100px;
+  margin-top: 60px;
   /*border-top-left-radius: 1em;
     border-top-right-radius: 1em;*/ }
 
@@ -41,8 +41,10 @@ meter {
   height: 500px; }
 
 .navbar {
-  border-bottom: 5px solid #222222;
-  border-top: 5px solid #222222; }
+  border-bottom: 5px solid #f2da1f;
+  border-top: 5px solid #222222;
+  padding-bottom: 10px;
+  box-shadow: 0px 10px 10px -3px; }
 
 .navbar .container {
   vertical-align: bottom; }
@@ -59,20 +61,27 @@ li > a {
 .navbar-nav > li > a {
   color: white;
   line-height: 10px;
-  margin-right: 10px; }
+  margin-right: 25px;
+  font-size: 20px; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #222222;
-  background-color: #f2da1f;
-  border-bottom: 5px solid #f2da1f;
-  /*border-top-left-radius: 0.7em;
-    border-top-right-radius: 0.7em;*/ }
+  background: #f2da1f;
+  background: -webkit-linear-gradient(#a9940a, #f2da1f);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a9940a, #f2da1f);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a9940a, #f2da1f);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a9940a, #f2da1f);
+  /* Standard syntax */
+  box-shadow: inset 0 0 5px; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   border-bottom: 5px solid #f2da1f; }
 
 .navbar-nav {
-  margin-top: 60px; }
+  margin-top: 20px; }
 
 .mainImageLogo {
   margin: 0 auto;
@@ -163,7 +172,8 @@ li > a {
 
 /* entypo */
 [class*="entypo-"]:before {
-  font-family: "entypo", sans-serif; }
+  font-family: "entypo", sans-serif;
+  font-size: 30px; }
 
 a {
   text-decoration: none; }
@@ -181,22 +191,22 @@ ul {
 #sticky-social {
   left: 0;
   position: fixed;
-  top: 170px;
+  top: 30%;
   z-index: 999; }
 
 #sticky-social a {
   background: #333;
   color: #fff;
   display: block;
-  height: 35px;
-  font: 16px "Open Sans", sans-serif;
-  line-height: 35px;
+  height: 45px;
+  font: 20px "Open Sans", sans-serif;
+  line-height: 45px;
   position: relative;
   text-align: center;
-  width: 35px; }
+  width: 45px; }
 
 #sticky-social a span {
-  line-height: 35px;
+  line-height: 45px;
   left: -120px;
   position: absolute;
   text-align: center;
@@ -215,6 +225,16 @@ ul {
 #sticky-social a[class*="twitter"] span {
   background: #00aced; }
 
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span {
+  background: #517fa4; }
+
+#sticky-social a[class*="play"],
+#sticky-social a[class*="play"]:hover,
+#sticky-social a[class*="play"] span {
+  background: #e52d27; }
+
 .afc-bio-list {
   list-style-type: square;
   font-size: 20px; }
@@ -230,7 +250,7 @@ ul {
   margin-bottom: 40px; }
 
 .afc-faq-question-lead, .afc-faq-answer-lead {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
@@ -269,6 +289,162 @@ ul {
   box-shadow: 0 0 0 5px #f2da1f, 0 0 0 8px #222222;
   padding: 3em; }
 
+.afc-double-border-bottom {
+  border-bottom: 3px solid #222222;
+  box-shadow: 0 4px 2px -2px #f2da1f, 0 8px 4px -4px #222222;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  color: #222222;
+  font-weight: bold; }
+
 .img-responsive-center {
   margin: 0 auto; }
+
+.afc-textbox-label {
+  text-align: right;
+  font-size: 18px;
+  vertical-align: bottom;
+  display: inline-block; }
+
+.afc-textbox {
+  padding-bottom: 25px; }
+
+.afc-required {
+  color: red;
+  font-size: 20px; }
+
+.afc-textbox-comments {
+  height: 150px !important; }
+
+.afc-contact-form-placeholder {
+  text-align: center;
+  margin-top: 40px; }
+
+.afc-validation-failed {
+  border: 1px solid red; }
+
+.afc-submit-success-text, .afc-submit-failure-text {
+  text-align: center;
+  display: none; }
+
+.afc-modal-label {
+  font-weight: bold; }
+
+.afc-contact-request-received {
+  color: green; }
+
+.afc-contact-request-failure {
+  color: red; }
+
+.afc-falvey-logo {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto; }
+
+.afc-copyright {
+  margin-top: 25px; }
+
+.afc-contact-text {
+  font-size: 18px;
+  text-align: center; }
+
+#afc-fixed-email {
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  top: 45px;
+  right: 25px; }
+
+.afc-client-donations > ul > li {
+  font-size: 24px;
+  list-style-type: square; }
+
+.afc-client-donations > ul > li > span {
+  font-size: 20px;
+  list-style-type: square; }
+
+.content {
+  width: 300px;
+  margin: 50px 0px 30px 30px;
+  float: left; }
+
+.thermometer {
+  width: 80px;
+  height: 400px;
+  position: relative;
+  background: #ddd;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  box-shadow: 1px 1px 4px #999, 5px 0 20px #999; }
+
+.thermometer .track {
+  height: 375px;
+  top: 10px;
+  width: 35px;
+  border: 1px solid #aaa;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(1%, white));
+  background: -webkit-linear-gradient(top, black 0%, white 10%);
+  background: -o-linear-gradient(top, black 0%, white 10%);
+  background: -ms-linear-gradient(top, black 0%, white 10%);
+  background: -moz-linear-gradient(top, black 0%, white 10%);
+  background: linear-gradient(to bottom, black 0%, white 10%);
+  background-position: 0 -1px;
+  background-size: 100% 5%; }
+
+.thermometer .progress {
+  height: 0%;
+  width: 100%;
+  background: #146414;
+  background: rgba(20, 100, 20, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0px;
+  border-radius: 0px; }
+
+.thermometer .goal {
+  position: absolute;
+  top: 0; }
+
+.thermometer .amount {
+  display: inline-block;
+  padding: 0 5px 0 60px;
+  border-top: 1px solid black;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  color: #333; }
+
+.thermometer .progress .amount {
+  padding: 0 60px 0 5px;
+  position: absolute;
+  border-top: 1px solid #060;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block; }
+
+#goalProgress {
+  position: absolute;
+  top: -10px;
+  right: -25px; }
+
+.textProgressAmount {
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: -15px; }
 
