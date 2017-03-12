@@ -2,11 +2,14 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2 class="col-xs-12 text-center afc-double-border-bottom">Agents For Change Capital Region</h2>
+<h2 class="col-xs-10 col-xs-offset-1 text-center afc-double-border-bottom">Agents For Change Capital Region</h2>
+
+
+
 
 <div class="row">
-    <div class="col-sm-2 hidden-xs"></div>
-    <div class="col-xs-12 col-sm-9 afc-homepage-mainContent-div">
+    <div class="col-sm-1 hidden-xs"></div>
+    <div class="col-xs-12 col-sm-8 afc-homepage-mainContent-div">
         <img src="~/Content/Images/AgentsforChange_logo.png" width="300" class="img-responsive pull-left afc-homepage-mainImage" />
         <h3 class="afc-homepage-startofarticle">Albany Realtors Give Back</h3>
         <span><i>With Agents for Change, Capital Region homebuyers and sellers donate to causes they care about most.</i></span>
@@ -21,7 +24,16 @@
         <p>The program, Rosenberger notes, helps people make sizeable donations to causes they believe in. "We're empowering them to make a large gift that they might not otherwise be able to make," he says.</p>
         <p>To learn more about Agents for Change, please visit www.agentsforchangecr.com. Members of the media can contact Sarah Harris or Erica Stoeckeler at 518-523-335 to arrange an interview with Chidyllo and Rosenberger.</p>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-3 afc-meter-container">
+        <div class="img-container">
+            <span class="afc-goal-amount">Goal: <span>$1000</span></span>
+            <div class="positioning">
+                <span class="afc-current-progress-amount">$400</span>
+            </div>
+            <img class="imgTest img-responsive" src="~/Content/Images/meterTesting2.png" />
+        </div>
+    </div>
+    @*<div class="col-sm-1">
         <div class="content">
             <h2 id="goalProgress"></h2>
             <div class="thermometer">
@@ -30,13 +42,13 @@
                         <div class="amount"> 100 </div>
                     </div>
                     <div class="progress">
-                        @**@
+                        
                     </div>
                 </div>
             </div>
             <div class="textProgressAmount"> </div>
         </div>
-    </div>
+    </div>*@
 </div>
 
 @*<div class="row mainImageRow">

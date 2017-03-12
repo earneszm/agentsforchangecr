@@ -548,3 +548,62 @@ ul {
     bottom: 0;
     right: -15px;
 }
+
+
+
+.afc-meter-container{
+  //  width: 15%;
+  //  min-width: 150px;
+
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background-color: #aaa;*/
+    text-align: center;
+}
+.col-lg-3 img {
+    max-width: 100%;
+    
+}
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+.positioning{
+    position: absolute;
+    right: 35%;
+    bottom: 10%;
+    background-color: #39375f;
+    color: white;
+    padding: 4px;
+    /*font-size: 17px;
+    line-height: 118px;*/
+    z-index:10;
+    width:33%;
+    height:0%;
+}
+
+.positioning > span{
+    position: absolute;
+    bottom: 90%;
+    left: 130%;
+    color: $afc-black-color;
+    font-weight: bold;
+    font-size: 3em;
+    display: none;
+
+}
+
+.imgTest
+{
+    position:relative;
+    z-index: 15;
+}
+
+.afc-goal-amount{
+    color: $afc-black-color;
+    font-weight: bold;
+    font-size: 2.5em;
+    white-space:nowrap;
+}

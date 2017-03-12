@@ -150,10 +150,31 @@ function thermometer(goalAmount, progressAmount, animate) {
 $(document).ready(function () {
 
     //call without the parameters to have it read from the DOM
-    thermometer(1000, 500, true);
+    //thermometer(1000, 500, true);
     // or with parameters if you want to update it using JavaScript.
     // you can update it live, and choose whether to show the animation
     // (which you might not if the updates are relatively small)
     //thermometer( 1000000, 425610, false );
+
+
+
+    var fullFactor = 79.5;
+    var effectiveZero = 19;
+    var difference = fullFactor - effectiveZero;
+
+
+    var goal = 1000;
+    var currentAmount = 400;
+
+
+
+    var totalPercentage = effectiveZero + ((currentAmount / goal) * difference);
+
+    $('.positioning').animate({
+        "height": totalPercentage + "%"
+    }, 2000, function () {
+        $(".afc-current-progress-amount").html('$' + currentAmount);
+        $(".afc-current-progress-amount").fadeIn(500);
+    });
 
 });
